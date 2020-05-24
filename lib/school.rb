@@ -34,3 +34,4 @@ school.roster
 school.add_student("Zach Morris", 9)
 school.roster
 school.grade(9)
+school.sort
