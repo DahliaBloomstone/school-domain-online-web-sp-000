@@ -2,7 +2,7 @@ class School
 
 def initialize(school_name)
 @school_name = school_name
-@roster = {}
+@roster = {} #has an empty roster when initialized
 end
 
 def roster
@@ -10,19 +10,19 @@ def roster
 end
 
 def add_student(name, grade)
-  @student_name = name
-  @grade = grade
+  @student_name = name #is able to add a student
+  @grade = grade #is able to add multiple students to a class (grade)
   if @roster.include?(grade) == false
-    @roster[grade] = []
+    @roster[grade] = [] #is able to add students to different grades
   end
   @roster[grade] << name
 end
 
-def grade(number)
+def grade(number) #is able to retreive students from a grade
   @roster[number]
 end
 
-def sort
+def sort #is able to sort the students
   @roster.each do |grade, name|
     @roster[grade] = name.sort
   end
