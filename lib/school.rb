@@ -28,3 +28,5 @@ def sort #is able to sort the students
   end
 end
 end
+
+school = School.new("Bayside High School")
